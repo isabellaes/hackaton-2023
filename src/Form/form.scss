@@ -1,0 +1,46 @@
+@import "../style/style.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  color: black;
+  gap: 0.5em;
+
+  h2 {
+    padding-bottom: 0.5em;
+  }
+
+  input {
+    padding: 1em;
+    margin: 0.5em;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    button {
+      background-color: orange;
+      border-radius: 3px;
+      padding: 1em;
+      min-width: 8em;
+      max-width: 15em;
+      height: fit-content;
+      transition: background-color 0.7s ease-in-out;
+      border: none;
+      color: black;
+      outline: 1px solid yellow;
+
+      &.close-btn {
+        background-color: rgba(128, 128, 128, 0.768);
+      }
+    }
+
+    button:hover {
+      background-color: rgb(255, 98, 0);
+    }
+  }
+}
