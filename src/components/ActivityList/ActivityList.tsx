@@ -1,10 +1,11 @@
 import "./ActivityList.scss"
+import yoga from "../../assets/yoga.jpg"
 
 const ActivityList = () => {
   return (
     <section className="activity-list">
       <div className="activity-list-card">
-        <img src="" alt="Aktivitetsbild" />
+        <img src={yoga} alt="Aktivitetsbild" />
         <div className="activity-list-card-info">
           <h3>Yoga</h3>
           <p>Fristad</p>

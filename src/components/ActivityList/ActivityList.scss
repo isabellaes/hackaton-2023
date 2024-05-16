@@ -1,7 +1,6 @@
 @import "../../style/style.scss";
 
 .activity-list {
-  width: fit-content;
   background-color: $background-color-secondary;
   color: $color-secondary;
   margin: $margin-secondary;
@@ -16,9 +15,13 @@
     flex-direction: row;
     img {
       margin-right: $margin-primary;
+      max-height: 100px;
     }
     .activity-list-card-info {
       padding: $padding-primary;
+      p {
+        color: $color-secondary;
+      }
     }
   }
 }
