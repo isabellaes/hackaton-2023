@@ -1,7 +1,7 @@
 const ActivityDetailsPage = () => {
   return (
     <div>
-      <h1>Activitypage</h1>
+      <h1>ActivityDetailpage</h1>
     </div>
   );
 };
