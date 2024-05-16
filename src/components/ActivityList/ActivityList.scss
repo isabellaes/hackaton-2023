@@ -13,9 +13,13 @@
     padding: $padding-primary;
     display: flex;
     flex-direction: row;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 5px 5px 5px $box-shadow-color-primary;
+    }
     img {
       margin-right: $margin-primary;
-      max-height: 100px;
+      height: 100px;
     }
     .activity-list-card-info {
       padding: $padding-primary;
