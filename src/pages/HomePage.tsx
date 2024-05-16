@@ -5,6 +5,7 @@ import äldre from "../assets/älder-1080548636-2048x2048.jpg";
 import cykel from "../assets/cykel-2158963.jpeg";
 import barn from "../assets/barn-photo-296301.jpeg";
 import front from "../assets/front.webp";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -37,6 +38,7 @@ const HomePage = () => {
           <h1>Välkommen till Aktivitets kompassen Borås</h1>
           <img src={front} alt="front" width={"75%"} height={250} />
         </div>
+        <Link className="link" to={"/activitys"}>Hitta Aktiviteter</Link>
         <div className="info">
           <div className="infoitem" >
             <p className="infofirst">
