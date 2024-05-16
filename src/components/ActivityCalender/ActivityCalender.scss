@@ -1,0 +1,13 @@
+@import "./../../style/style.scss";
+
+.activity-calender {
+  width: fit-content;
+  background-color: $background-color-secondary;
+  color: $color-secondary;
+  margin: $margin-secondary;
+  padding: $padding-secondary;
+  border-radius: $border-radius-primary;
+  h2 {
+    text-align: center;
+  }
+}

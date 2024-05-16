@@ -1,9 +1,9 @@
-import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ActivityPage from "./pages/ActivityPage.tsx";
-import HomePage from "./pages/HomePage.tsx";
-import ActivityDetailsPage from "./pages/ActivityDetailsPage/ActivityDetailPage.tsx";
-import Header from "./components/header/Header.tsx";
+import "./App.scss"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import HomePage from "./pages/HomePage.tsx"
+import ActivityDetailsPage from "./pages/ActivityDetailsPage/ActivityDetailPage.tsx"
+import Header from "./components/header/Header.tsx"
+import ActivityPage from "./pages/ActivityPage/ActivityPage.tsx"
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/activity/:id" element={<ActivityDetailsPage />} />
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

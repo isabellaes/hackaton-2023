@@ -1,0 +1,27 @@
+@import "../../style/style.scss";
+
+.activity-list {
+  background-color: $background-color-secondary;
+  color: $color-secondary;
+  margin: $margin-secondary;
+  padding: $padding-primary;
+  border-radius: $border-radius-primary;
+  .activity-list-card {
+    background-color: $background-color-primary;
+    border-radius: $border-radius-primary;
+    margin: $margin-primary;
+    padding: $padding-primary;
+    display: flex;
+    flex-direction: row;
+    img {
+      margin-right: $margin-primary;
+      max-height: 100px;
+    }
+    .activity-list-card-info {
+      padding: $padding-primary;
+      p {
+        color: $color-secondary;
+      }
+    }
+  }
+}
