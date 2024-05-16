@@ -1,10 +1,13 @@
-import yogaImg from "../assets/yoga.jpg";
+import yogaImg from "../../assets/yoga.jpg";
+import "./ActivityDetailsPage.scss";
 
 const ActivityDetailsPage = () => {
   return (
     <div className="ActivityDetailsPage">
+      <div className="img-box">
+        <img style={{ width: "20rem", height: "20rem" }} src={yogaImg} alt="" />
+      </div>
       <div className="activity-box">
-        <img style={{ width: "2rem", height: "2rem" }} src={yogaImg} alt="" />
         <h1>Aktivitet</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Quos
