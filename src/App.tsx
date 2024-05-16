@@ -1,8 +1,8 @@
-import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ActivityDetailsPage from "./pages/ActivityDetailPage.tsx";
-import ActivityPage from "./pages/ActivityPage.tsx";
-import HomePage from "./pages/HomePage.tsx";
+import "./App.scss"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import ActivityDetailsPage from "./pages/ActivityDetailPage.tsx"
+import ActivityPage from "./pages/ActivityPage/ActivityPage.tsx"
+import HomePage from "./pages/HomePage.tsx"
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/activity/:id" element={<ActivityDetailsPage />} />
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
