@@ -1,7 +1,7 @@
 @import "../../style/style.scss";
 
 .activity-list {
-  background-color: $background-color-secondary;
+  background-color: $background-color-quaternary;
   color: $color-secondary;
   margin: $margin-secondary;
   padding: $padding-primary;
@@ -19,7 +19,7 @@
     }
     img {
       margin-right: $margin-primary;
-      height: 100px;
+      max-height: 150px;
     }
     .activity-list-card-info {
       padding: $padding-primary;
