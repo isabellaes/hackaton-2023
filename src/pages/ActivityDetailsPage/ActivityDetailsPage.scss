@@ -12,6 +12,20 @@
     }
 
     button {
+      background-color: orange;
+      border-radius: 3px;
+      padding: 1em;
+      min-width: 8em;
+      max-width: 15em;
+      height: fit-content;
+      transition: background-color 0.7s ease-in-out;
+      border: none;
+      color: black;
+      outline: 1px solid yellow;
+    }
+
+    button:hover {
+      background-color: rgb(255, 98, 0);
     }
   }
 }

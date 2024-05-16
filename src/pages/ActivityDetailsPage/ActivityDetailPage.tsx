@@ -1,7 +1,11 @@
 import yogaImg from "../../assets/yoga.jpg";
 import "./ActivityDetailsPage.scss";
+import Form from "../../Form/Form";
+import Modal from "../../Modal/Modal";
+import { useState } from "react";
 
 const ActivityDetailsPage = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="ActivityDetailsPage">
       <div className="img-box">
@@ -17,13 +21,15 @@ const ActivityDetailsPage = () => {
         </p>
 
         <h3>Antal anmälda platser 11/20</h3>
-        <button
-          onClick={() => {
-            console.log("klick :)");
-          }}
-        >
-          Anmäl dig här
-        </button>
+        <button onClick={() => setOpen(true)}>Anmäl dig här</button>
+
+        {open ? (
+          <Modal>
+            <Form onClose={() => setOpen(false)} />
+          </Modal>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
