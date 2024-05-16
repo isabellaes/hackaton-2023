@@ -12,7 +12,9 @@ const ActivityDetailsPage = () => {
         <img style={{ width: "20rem", height: "20rem" }} src={yogaImg} alt="" />
       </div>
       <div className="activity-box">
-        <h1>Aktivitet</h1>
+        <h1>Aktivitet: Yoga</h1>
+        <h3>Plats: Yogacentrum</h3>
+        <h3>Tid: 18:00 - 18:50</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Quos
           laborum dolorem accusamus odio rerum, consequatur hic repudiandae{" "}
