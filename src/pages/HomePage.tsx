@@ -74,16 +74,6 @@ const HomePage = () => {
             </p>
           </div>
           <div className="infoitem">
-            <h2>Hitta Aktiviteter:</h2>
-            <p>
-              Bläddra bland ett brett utbud av aktiviteter som arrangeras av
-              Borås invånare och organisationer. Från yoga i parken till
-              matlagningskurser och fotbollsmatcher, det finns något för alla
-              intressen och åldrar. Anmäl dig enkelt till de aktiviteter som
-              fångar ditt intresse och gör dig redo att delta och ha kul!
-            </p>
-          </div>
-          <div className="infoitem">
             <h2>Varför Använda Aktivitets-Kompassen?</h2>
             <p>
               Upptäck mångfalden av aktiviteter som Borås har att erbjuda, allt
