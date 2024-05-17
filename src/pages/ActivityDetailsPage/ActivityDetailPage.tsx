@@ -20,7 +20,10 @@ const ActivityDetailsPage = () => {
         </p>
 
         <h3>Antal anmälda platser 11/20</h3>
-        <Link to={"/booking"}>Boka aktivitet</Link>
+        <Link to={"/booking"}>
+          {" "}
+          <button> Hitta tider</button>
+        </Link>
       </div>
     </div>
   );
