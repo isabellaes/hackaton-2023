@@ -1,34 +1,49 @@
-// Import faker.js library
-import { faker } from "@faker-js/faker";
+import yoga from "../../assets/yoga.jpg";
+import walk from "../../assets/walk-unsplash.jpg";
+import discgolf from "../../assets/discgolf-unsplash.jpg";
+import tabletennis from "../../assets/tabletennis-unsplash.jpg";
 
-// Define the Activity type
-type Activity = {
-  id: number;
-  title: string;
-  organisation: string;
-  date: Date;
-  description: string;
-  location: string;
-  places: number;
-};
+const Activitys = [
+  {
+    id: 1,
+    name: "Yoga",
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum dolorem accusamus odio rerum, consequatur hic repudiandae cumque dolorum optio deserunt reprehenderit ut minima ametquibusdam. Praesentium doloremque quis quos.",
+    place: "Yogacentrum",
+    date: "2024-03-16",
+    time: "18:00 - 18:50",
+    img: { yoga },
+  },
+  {
+    id: 1,
+    name: "Promenad",
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum dolorem accusamus odio rerum, consequatur hic repudiandae cumque dolorum optio deserunt reprehenderit ut minima ametquibusdam. Praesentium doloremque quis quos.",
+    place: "Centrum",
+    date: "2024-09-16",
+    time: "18:00 - 18:50",
+    img: { walk },
+  },
+  {
+    id: 1,
+    name: "Discgolf",
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum dolorem accusamus odio rerum, consequatur hic repudiandae cumque dolorum optio deserunt reprehenderit ut minima ametquibusdam. Praesentium doloremque quis quos.",
+    place: "Dalsjöfors",
+    date: "2024-05-18",
+    time: "14:00 - 14:50",
+    img: { discgolf },
+  },
+  {
+    id: 1,
+    name: "Tennis",
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum dolorem accusamus odio rerum, consequatur hic repudiandae cumque dolorum optio deserunt reprehenderit ut minima ametquibusdam. Praesentium doloremque quis quos.",
+    place: "Byttorp",
+    date: "2024-03-20",
+    time: "18:00 - 18:50",
+    img: { tabletennis },
+  },
+];
 
-// Generate fake activities
-const generateActivities = (count: number): Activity[] => {
-  const activities: Activity[] = [];
-  for (let i = 1; i <= count; i++) {
-    const activity: Activity = {
-      id: i,
-      title: faker.lorem.words(3),
-      organisation: faker.company.name(),
-      date: faker.date.future(),
-      description: faker.lorem.paragraph(),
-      location: "Borås",
-      places: faker.datatype.number({ min: 10, max: 100 }),
-    };
-    activities.push(activity);
-  }
-  return activities;
-};
-
-// Generate 10 fake activities in Borås
-export const fakeActivities = generateActivities(40);
+export default Activitys;

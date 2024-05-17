@@ -1,12 +1,12 @@
-import ActivityDateCalender from "../../components/ActivityDateCalender/ActivityDateCalender"
-import "./ActivityPage.scss"
+import { Link } from "react-router-dom";
+
 const ActivityPage = () => {
   return (
-    <div className="activity-page">
-      <h1>Aktiviteter</h1>
-      <ActivityDateCalender />
-    </div>
-  )
-}
+    <>
+      <h1>Activitys</h1>
+      <Link to={"/activity/6"}>Yoga</Link>
+    </>
+  );
+};
 
-export default ActivityPage
+export default ActivityPage;

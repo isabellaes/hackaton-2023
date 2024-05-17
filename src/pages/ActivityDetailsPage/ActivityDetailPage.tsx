@@ -1,11 +1,8 @@
 import yogaImg from "../../assets/yoga.jpg";
 import "./ActivityDetailsPage.scss";
-import Form from "../../Form/Form";
-import Modal from "../../Modal/Modal";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ActivityDetailsPage = () => {
-  const [open, setOpen] = useState(false);
   return (
     <div className="ActivityDetailsPage">
       <div className="img-box">
@@ -23,15 +20,7 @@ const ActivityDetailsPage = () => {
         </p>
 
         <h3>Antal anmälda platser 11/20</h3>
-        <button onClick={() => setOpen(true)}>Anmäl dig här</button>
-
-        {open ? (
-          <Modal>
-            <Form onClose={() => setOpen(false)} />
-          </Modal>
-        ) : (
-          <></>
-        )}
+        <Link to={"/booking"}>Boka aktivitet</Link>
       </div>
     </div>
   );
