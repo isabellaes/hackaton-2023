@@ -15,22 +15,22 @@ const HomePage = () => {
         <div className="asidecontainer">
           <img src={yoga} alt="yoga" width={250} height={250} />
           <h2>Yoga</h2>
-          <p>17/5 kl: 18:00</p>
+          <p>17/5 kl: 17:00</p>
+        </div>
+        <div className="asidecontainer">
+        <img src={barn} alt="barn" width={250} height={250} />
+          <h2>Barnaktivitet</h2>
+          <p>17/ kl:17:15</p>
         </div>
         <div className="asidecontainer">
           <img src={äldre} alt="äldre" width={250} height={250} />
           <h2>Äldreträff</h2>
-          <p>info</p>
+          <p>17/5 kl:18:00</p>
         </div>
         <div className="asidecontainer">
           <img src={cykel} alt="cykel" width={250} height={250} />
           <h2>Cykeltur</h2>
-          <p>info</p>
-        </div>
-        <img src={barn} alt="barn" width={250} height={250} />
-        <div className="asidecontainer">
-          <h2>Barnaktivitet</h2>
-          <p>info</p>
+          <p>17/5 kl: 18:30</p>
         </div>
       </aside>
       <div className="main">
