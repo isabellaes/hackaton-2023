@@ -2,9 +2,10 @@ import "./form.scss";
 
 type FormProps = {
   onClose: () => void;
+  onSubmit: () => void;
 };
 
-const Form = ({ onClose }: FormProps) => {
+const Form = ({ onClose, onSubmit }: FormProps) => {
   return (
     <form className="form">
       <h2>Anmäl dig till aktivitet</h2>
@@ -15,7 +16,7 @@ const Form = ({ onClose }: FormProps) => {
       <label htmlFor="age">Ålder: </label>
       <input type="date" name="" id="age" />
       <div className="buttons">
-        <button>Skicka</button>
+        <button onClick={onSubmit}>Skicka</button>
         <button className="close-btn" onClick={onClose}>
           Avbryt
         </button>

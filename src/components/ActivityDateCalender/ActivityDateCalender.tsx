@@ -1,18 +1,20 @@
-import { useState } from "react"
-import "./ActivityDateCalender.scss"
-import Calender from "./Calender/Calender"
-import ActivityList from "../ActivityList/ActivityList"
-import Form from "../../Form/Form"
+import { useState } from "react";
+import "./ActivityDateCalender.scss";
+import Calender from "./Calender/Calender";
+import ActivityList from "../ActivityList/ActivityList";
+import Form from "../../Form/Form";
+import Modal from "../../Modal/Modal";
 const ActivityDateCalender = () => {
-  const [date, setDate] = useState("")
+  const [date, setDate] = useState("");
   const setDateChosed = (date: string) => {
-    setDate(date)
-  }
+    setDate(date);
+  };
 
-  const [showForm, setShowForm] = useState(false)
+  const [showForm, setShowForm] = useState(false);
   const setShowFormHandler = () => {
-    setShowForm(!showForm)
-  }
+    setShowForm(!showForm);
+  };
+  const [open, setOpen] = useState(false);
   return (
     <section className="activity-date-calender">
       <div className="calender">
@@ -25,13 +27,27 @@ const ActivityDateCalender = () => {
       </div>
       {showForm && (
         <Form
-          onClose={function (): void {
-            throw new Error("Function not implemented.")
+          onSubmit={() => {
+            setShowForm(false);
+            setOpen(true);
+          }}
+          onClose={() => {
+            setShowForm(false);
           }}
         />
       )}
+      {open ? (
+        <Modal>
+          <div className="confirmation">
+            <h1>Tack för din bokning!</h1>
+            <button onClick={() => setOpen(false)}>Close</button>
+          </div>
+        </Modal>
+      ) : (
+        <></>
+      )}
     </section>
-  )
-}
+  );
+};
 
-export default ActivityDateCalender
+export default ActivityDateCalender;
