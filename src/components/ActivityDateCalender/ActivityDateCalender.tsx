@@ -15,7 +15,7 @@ const ActivityDateCalender = () => {
   }
   return (
     <section className="activity-date-calender">
-      <div>
+      <div className="calender">
         <Calender setDateChosed={setDateChosed} />
         {date && (
           <div>

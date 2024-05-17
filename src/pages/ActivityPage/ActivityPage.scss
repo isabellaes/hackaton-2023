@@ -3,12 +3,16 @@
 .activity-page {
   background-color: $background-color-secondary;
   color: $color-secondary;
-  margin: $margin-secondary;
-  padding: $padding-secondary;
-  border-radius: $border-radius-primary;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  // margin: $margin-secondary;
+  // padding: $padding-secondary;
+  // border-radius: $border-radius-primary;
 
   h1 {
-    text-align: center;
     color: $color-secondary;
+    padding-top: 30px;
   }
 }

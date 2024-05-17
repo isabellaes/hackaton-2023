@@ -2,18 +2,25 @@
 .calender {
   background-color: $background-color-quaternary;
   width: fit-content;
-  margin: $margin-secondary;
-  padding: $padding-primary;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 30px;
+  font-size: 20px;
+  // margin: $margin-secondary;
+  // padding: $padding-primary;
   border: 5px solid $background-color-secondary;
   header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     button {
       background-color: $background-color-secondary;
       color: $color-secondary;
-      margin: $margin-primary;
-      padding: $padding-primary;
+      margin:20px;
+      padding: 10px;
       border-radius: $border-radius-primary;
       transition: all 0.5s;
       &:hover {
