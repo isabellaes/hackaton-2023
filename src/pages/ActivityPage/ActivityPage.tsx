@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ActivityPage.scss";
+import ActivityDetailsPage from "../ActivityDetailsPage/ActivityDetailPage";
 
 const ActivityPage = () => {
   return (
@@ -21,6 +22,9 @@ const ActivityPage = () => {
         <Link className="activity-link" to={"/activity/6"}>
           <h2>Padel</h2>
         </Link>
+      </div>
+      <div className="activityDetailsPage-box">
+        <ActivityDetailsPage />
       </div>
     </div>
   );
